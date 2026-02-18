@@ -20,7 +20,8 @@ if not exist "target\classes\rmi\VegetableComputeTaskRegistry.class" (
 )
 
 echo Compiling web server...
-javac -d target\classes -encoding UTF-8 src\main\java\server\SimpleWebServer.java
+REM Include already-compiled classes on classpath so imports resolve
+javac -cp target\classes -d target\classes -encoding UTF-8 src\main\java\server\SimpleWebServer.java
 
 if errorlevel 1 (
     echo Compilation failed!
