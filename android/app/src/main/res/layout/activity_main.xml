@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:paddingBottom="16dp" />
+
+        <!-- 1. Add vegetable -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1. Add vegetable price"
+            android:textStyle="bold"
+            android:paddingTop="8dp" />
+        <EditText
+            android:id="@+id/add_vegetable_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Vegetable name"
+            android:inputType="text" />
+        <EditText
+            android:id="@+id/add_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Price per unit"
+            android:inputType="numberDecimal" />
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add" />
+        <TextView
+            android:id="@+id/result_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp"
+            android:textSize="12sp" />
+
+        <!-- 2. Update vegetable -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2. Update vegetable price"
+            android:textStyle="bold"
+            android:paddingTop="8dp" />
+        <EditText
+            android:id="@+id/update_vegetable_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Vegetable name"
+            android:inputType="text" />
+        <EditText
+            android:id="@+id/update_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="New price per unit"
+            android:inputType="numberDecimal" />
+        <Button
+            android:id="@+id/btn_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update" />
+        <TextView
+            android:id="@+id/result_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp"
+            android:textSize="12sp" />
+
+        <!-- 3. Delete vegetable -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3. Delete vegetable"
+            android:textStyle="bold"
+            android:paddingTop="8dp" />
+        <EditText
+            android:id="@+id/delete_vegetable_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Vegetable name"
+            android:inputType="text" />
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete" />
+        <TextView
+            android:id="@+id/result_delete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp"
+            android:textSize="12sp" />
+
+        <!-- 4. Calculate cost -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="4. Calculate vegetable cost"
+            android:textStyle="bold"
+            android:paddingTop="8dp" />
+        <EditText
+            android:id="@+id/cost_vegetable_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Vegetable name"
+            android:inputType="text" />
+        <EditText
+            android:id="@+id/cost_quantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Quantity"
+            android:inputType="numberDecimal" />
+        <Button
+            android:id="@+id/btn_calc_cost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calculate cost" />
+        <TextView
+            android:id="@+id/result_cost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp"
+            android:textSize="12sp" />
+
+        <!-- 5. Receipt -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="5. Print receipt"
+            android:textStyle="bold"
+            android:paddingTop="8dp" />
+        <EditText
+            android:id="@+id/receipt_total_cost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Total cost"
+            android:inputType="numberDecimal" />
+        <EditText
+            android:id="@+id/receipt_amount_given"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Amount given"
+            android:inputType="numberDecimal" />
+        <EditText
+            android:id="@+id/receipt_cashier"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Cashier name (logged in)"
+            android:inputType="text" />
+        <Button
+            android:id="@+id/btn_receipt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Print receipt" />
+        <TextView
+            android:id="@+id/result_receipt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="24dp"
+            android:textSize="12sp" />
+    </LinearLayout>
+</ScrollView>
